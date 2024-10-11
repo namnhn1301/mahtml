@@ -13,7 +13,8 @@
             align-items: center;
             flex-direction: column;
             height: 100vh;
-        }
+        padding-top: 20px; /* Điều chỉnh khoảng cách phía trên */
+}
         .container {
             background-color: #fff;
             padding: 20px;
@@ -21,7 +22,10 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 80%;
             max-width: 800px;
-            margin-bottom: 20px;
+            margin-bottom: 20px;        
+    overflow-y: auto;
+    max-height: 90vh; /* Giới hạn chiều cao để đảm bảo vừa với màn hình */
+
         }
         h1 {
             text-align: center;
@@ -35,6 +39,21 @@
             max-height: 400px;
             position: relative;
         }
+        
+        @media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .code-container {
+        padding: 10px;
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
         .line-numbers {
             position: absolute;
             left: 0;
