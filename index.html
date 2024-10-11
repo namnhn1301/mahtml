@@ -70,6 +70,12 @@
         button:hover {
             background-color: #45a049;
         }
+        .button-group {
+            display: flex;
+            justify-content: center; /* Canh giữa các nút */
+            gap: 10px; /* Khoảng cách giữa các nút */
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -173,7 +179,11 @@
         </div>
         <button onclick="copyCode('codeBlockIndex')">Sao chép mã CLB.html</button>
     </div>
-
+    <div class="button-group">
+        <button onclick="copyCode('codeBlockIndex')">Sao chép mã CLB.html</button>
+        <button onclick="downloadFile('CLB.html', document.getElementById('codeBlockIndex').textContent)">Tải về CLB.html</button>
+    </div>
+</div>
     <div class="container">
         <h1>thong_tin.html</h1>
         <div class="code-container">
@@ -196,7 +206,10 @@
         </div>
         <button onclick="copyCode('codeBlockThongTin')">Sao chép mã thong_tin.html</button>
     </div>
-
+    <div class="button-group">
+        <button onclick="copyCode('codeBlockThongTin')">Sao chép mã thong_tin.html</button>
+        <button onclick="downloadFile('thong_tin.html', document.getElementById('codeBlockThongTin').textContent)">Tải về thong_tin.html</button>
+    </div>
     <script>
         function addLineNumbers(preId, lineNumbersId) {
             var code = document.getElementById(preId).textContent;
@@ -235,6 +248,22 @@
             console.log("Service Worker registration failed:", error);
         });
     }
+    function downloadFile(filename, content) {
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(content));
+            element.setAttribute('download', filename);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+        // Tự động thêm số dòng cho mỗi khối mã
+        window.onload = function() {
+            addLineNumbers("codeBlockIndex", "lineNumbersIndex");
+            addLineNumbers("codeBlockThongTin", "lineNumbersThongTin");
+        };
+
     </script>
     <script src="service-worker.js"></script>
 </body>
