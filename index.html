@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chèn Mã HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .code-container {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-height: 400px;
+            position: relative;
+        }
+        .line-numbers {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding: 15px;
+            background-color: #eee;
+            text-align: right;
+            border-right: 1px solid #ccc;
+            user-select: none;
+        }
+        .line-numbers span {
+            display: block;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            padding-left: 50px; /* Offset to align with line numbers */
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CLB.html</h1>
+        <div class="code-container">
+            <div class="line-numbers" id="lineNumbersIndex" aria-hidden="true"></div>
+            <pre id="codeBlockIndex">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Lịch hoạt động CLB Thể Thao&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+    &lt;h2&gt;Giới thiệu các hoạt động ngoại khoá&lt;/h2&gt;
+    &lt;p&gt;Trong THPT Nguyễn Bỉnh Khiêm có bề dày thành tích và học tập với các hoạt động thể thao, văn nghệ của thành phố.
+       Nhiều năm liền trường học đạt thành tích cao trong các hội thi và hoạt động đoàn đội của sinh hoạt.
+    &lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;03 HCV, 02 HCB, 01 HCĐ môn Bơi lội&lt;/li&gt;
+        &lt;li&gt;02 HCV, 06 HCB và 05 HCĐ cấp thành phố các môn Võ thuật&lt;/li&gt;
+        &lt;li&gt;Vô địch giải bóng đá nam, bóng đá nữ cấp quận&lt;/li&gt;
+        &lt;li&gt;Giải nhì đơn ca, giải ba đồng diễn âm nhạc quận&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;a href="thong_tin.html"&gt;Theo dõi lịch hoạt động các CLB Thể thao&lt;/a&gt;
+&lt;table id="CLBTT" border="1"&gt;
+    &lt;caption&gt;Lịch hoạt động CLB Thể thao&lt;/caption&gt;
+    &lt;tr style="border:1px solid"&gt;
+      &lt;th rowspan="2"&gt;Bộ môn&lt;/th&gt;
+      &lt;th rowspan="2"&gt;GV phụ trách&lt;/th&gt;
+      &lt;th colspan="5"&gt;Ngày&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Thứ 2&lt;/th&gt;
+        &lt;th&gt;Thứ 3&lt;/th&gt;
+        &lt;th&gt;Thứ 4&lt;/th&gt;
+        &lt;th&gt;Thứ 5&lt;/th&gt;
+        &lt;th&gt;Thứ 6&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bóng đá&lt;/td&gt;
+        &lt;td&gt;Thầy Khải&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;X&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;X&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bóng chuyền&lt;/td&gt;
+        &lt;td&gt;Cô Lan&lt;/td&gt;
+        &lt;td&gt;X&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bóng rổ&lt;/td&gt;
+        &lt;td&gt;Thầy Vũ&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;X&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td rowspan="3"&gt;Võ thuật&lt;/td&gt;
+        &lt;td&gt;Thầy Hoàng - Karatedo&lt;/td&gt;
+        &lt;td rowspan="3"&gt;X&lt;/td&gt;
+        &lt;td rowspan="3"&gt;X&lt;/td&gt;
+        &lt;td rowspan="3"&gt;&lt;/td&gt;
+        &lt;td rowspan="3"&gt;X&lt;/td&gt;
+        &lt;td rowspan="3"&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Thầy Đức - Taekwondo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Thầy Thắng - Vovinam&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bơi&lt;/td&gt;
+        &lt;td&gt;Cô Bích&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;X&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;X&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+        <button onclick="copyCode('codeBlockIndex')">Sao chép mã CLB.html</button>
+    </div>
+
+    <div class="container">
+        <h1>thong_tin.html</h1>
+        <div class="code-container">
+            <div class="line-numbers" id="lineNumbersThongTin" aria-hidden="true"></div>
+            <pre id="codeBlockThongTin">
+&lt;div&gt;
+    &lt;h2&gt;Thông tin các Câu lạc bộ&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Bóng đá - Thầy Khải&lt;/li&gt;
+        &lt;li&gt;Bóng chuyền - Cô Lan&lt;/li&gt;
+        &lt;li&gt;Bóng rổ - Thầy Vũ&lt;/li&gt;
+        &lt;li&gt;Võ thuật - Thầy Hoàng (Karatedo)&lt;/li&gt;
+        &lt;li&gt;Võ thuật - Thầy Đức (Taekwondo)&lt;/li&gt;
+        &lt;li&gt;Võ thuật - Thầy Thắng (Vovinam)&lt;/li&gt;
+        &lt;li&gt;Bơi - Cô Bích&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;a href="CLB.html"&gt;Quay về trang giới thiệu&lt;/a&gt;
+            </pre>
+        </div>
+        <button onclick="copyCode('codeBlockThongTin')">Sao chép mã thong_tin.html</button>
+    </div>
+
+    <script>
+        function addLineNumbers(preId, lineNumbersId) {
+            var code = document.getElementById(preId).textContent;
+            var lines = code.split("\n").length;
+            var lineNumbers = document.getElementById(lineNumbersId);
+            lineNumbers.innerHTML = "";
+            for (var i = 1; i <= lines; i++) {
+                var lineNumber = document.createElement("span");
+                lineNumber.textContent = i;
+                lineNumbers.appendChild(lineNumber);
+            }
+        }
+
+        function copyCode(elementId) {
+            var codeBlock = document.getElementById(elementId);
+            var range = document.createRange();
+            range.selectNode(codeBlock);
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            alert("Đã sao chép mã vào clipboard!");
+            window.getSelection().removeAllRanges(); 
+        }
+
+        // Tự động thêm số dòng cho mỗi khối mã
+        window.onload = function() {
+            addLineNumbers("codeBlockIndex", "lineNumbersIndex");
+            addLineNumbers("codeBlockThongTin", "lineNumbersThongTin");
+        };
+
+        if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js")
+        .then((registration) => {
+            console.log("Service Worker registered with scope:", registration.scope);
+        }).catch((error) => {
+            console.log("Service Worker registration failed:", error);
+        });
+    }
+    </script>
+    <script src="service-worker.js"></script>
+</body>
+</html>
